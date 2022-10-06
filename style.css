@@ -22,6 +22,7 @@ article {
     color: white;
     display: flex;
     flex-direction: row;
+    transform: rotate(-1deg);
 }
 
 .article-title {
@@ -33,6 +34,8 @@ article {
     margin-top: 0;
     margin-bottom: 0;
     padding: 1vw;
+    transform: rotate(-2deg);
+    transition: transform 0.5s;
 }
 
 p {
@@ -44,6 +47,15 @@ p {
     margin-top: 0;
     margin-bottom: 0;
     transform: rotate(1.3deg);
+    transition: transform 0.25s;
+}
+
+p:hover {
+    transform: rotate(-1deg);
+}
+
+.article-title:hover {
+    transform: rotate(182deg);
 }
 
 .one {
@@ -82,18 +94,12 @@ p {
     h2 {
         margin-left: 0;
         margin-right: 0;
-        font-size: 1.4rem;
-        /* transform: rotate(90deg); */
     }
 
     .article-title{
         writing-mode: vertical-lr;
         height: auto;
     }
-
-    /* p {
-        font-size: 0.8rem;
-    } */
 
 }
 
